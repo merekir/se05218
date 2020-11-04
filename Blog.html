@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- Engligh language, en stands for engligh--> 
+<head>
+	<title>Trang web 1</title>
+	<meta charset="utf-8">		<!-- character set of English-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Kir's Website</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Blog.html">Blog</a>
+    </li>
+  </ul>
+  <!-- class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+
+</nav>
+
+<!-- add them Blog ----------------------------------------------------------------------------------- -->
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+
+<div class="header">
+  <br>
+  <h2>Hearthstone Diary</h2>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>DAY 12</h2>
+      <h5>Arena, Dec 7, 2017</h5>
+      <div>
+      <img src="images\Hearthstone Screenshot 12-15-17 19.09.35.png" alt="Jaina" style="width:100%">
+      </div>
+      <br>
+      <p>Madness at the Darkmoon Faire is the upcoming Hearthstone expansion. While the denizens of Azeroth may expect an outing filled with family-friendly fun at the fairgrounds, they’ll instead find a creepy carnival corrupted by rigged games of chance, deep-fried foods of mysterious origin, and the tentacled grips of unspeakable horrors.</p>
+    </div>
+    <div class="card">
+      <h2>DAY 5</h2>
+      <h5>Ranked, Sep 2, 2017</h5>
+      <div><img src="images\Hearthstone Screenshot 04-16-18 19.16.21.png" alt="Jaina" style="width:100%"></div>
+      <br>     
+      <p>The Old Gods are timeless eldritch beings who ruled over Azeroth during its primordial age. In World of Warcraft, they slithered out from their millennia-long slumber only to be beaten to a squishy pulp by bands of plucky adventurers.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div>
+        <img src="images\photo.jpg" width="410" height="410">
+      </div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div> <img src="images\Hearthstone Screenshot 08-08-18 06.23.19.png" width="410"> </div><br>
+      <div> <img src="images\Hearthstone Screenshot 12-27-16 11.58.07.png" width="410"> </div><br>
+      <div> <img src="images\Screenshot (31).png" width="410"> </div><br>
+    </div>    
+  </div>
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">    <!-- Engligh language, en stands for engligh--> 
+<head>
+	<title>Trang web 1</title>
+	<meta charset="utf-8">		<!-- character set of English-->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body style="height:1500px">
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <a class="navbar-brand" href="index.html">Kir's Website</a>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="Gallery.html">Gallery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Contact.html">Contact</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="About us.html">About us</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Blog.html">Blog</a>
+    </li>
+  </ul>
+  <!-- class="navbar navbar-expand-sm bg-dark navbar-dark"> -->
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+    <button class="btn btn-success" type="submit">Search</button>
+  </form>
+
+</nav>
+
+<!-- ABOUT US PAGE -->
+
+<section>
+	<div class="container">
+    <br>
+		<h1 class="text-center pt-5">ABOUT US</h1> <!-- pt means padding (lay tu 1 den 5)-->  
+    <hr class="w-100 pt-4"> <!-- hr la cai gach ngang -->
+    <div class="row">
+      <div class="col">
+        <img src="images\photo.jpg" width="350" height="350">
+      </div>
+
+      <div class="col">
+        <h2>Our story</h2>
+
+        <p>We are a group of friends with a passion for games. Together, we have launched numerous large scale games and projects. We have felt our hearts lifted by the communities that have formed around our games, and have also huddled to come up with solutions when things went wrong. And together, we have come to understand it is about the journey and not the destination. <span id="dots">...</span><span id="more">This is just the beginning. We believe the strongest teams not only have aligned values and trust, but also have diverse backgrounds and experiences. We are seeking more friends and colleagues who have seen the world through different lenses and will bring additional perspectives. Our company and the games we make will be better for it.</span></p>
+
+        <!-- them nut read more-->
+        <button onclick="myFunction()" id="myBtn">Read more</button> 
+
+        <style>
+        #more {display: none;}
+        </style>
+
+        <!-- scrip de an hien chu -->
+        <script> 
+        function myFunction() {
+          var dots = document.getElementById("dots");
+          var moreText = document.getElementById("more");
+          var btnText = document.getElementById("myBtn");
+
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+      </div>
+    </div>
+
+<!-- them MY TEAM -->	
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+<br> <br> <br>
+<h2 class="text-center">MY TEAM</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="images\Mei.jpg" alt="Mei" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Growing up, went to see Star Wars and was immediately obsessed with the worlds.</p>
+        <p>janedoe1@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="images\Jaina.jpg" alt="Jaina" style="width:100%">
+      <div class="container">
+        <h2>Carlyn Lim</h2>
+        <p class="title">Art Director</p>
+        <p>Carlyn always loved drawing and exploring imaginary worlds.</p>
+        <p>carlyn2@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="images\Omen.jpg" alt="Omen" style="width:100%">
+      <div class="container">
+        <h2>Dave Adams</h2>
+        <p class="title">Designer</p>
+        <p>Dave got his start by doing QA, set building, and movie editing for The Neverhood.</p>
+        <p>daveadams3@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+				
+
+
+
+
+</section>
+
+
+
+</body>
+
+</html>
